@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_debt"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/dollar"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/debt_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Borrowed Sin City"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_toEndOf="@id/image_debt"
+        android:layout_toRightOf="@+id/image_debt"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="6dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/debt_item_title"
+        android:layout_alignLeft="@+id/debt_item_title"
+        android:layout_toLeftOf="@+id/img_debt_repaid"
+        android:id="@+id/ll_lend">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/list_lend"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="17.12.2014"
+            android:id="@+id/debt_item_lend_date"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/img_debt_repaid"
+        android:id="@+id/ll_due"
+        android:layout_below="@+id/ll_lend"
+        android:layout_alignLeft="@+id/ll_lend">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/list_due"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="31.12.2014"
+            android:id="@+id/debt_item_due_date"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/img_debt_repaid"
+        android:src="@drawable/ic_debt_repaid"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp" />
+
+</RelativeLayout>

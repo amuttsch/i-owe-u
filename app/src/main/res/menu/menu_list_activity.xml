@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".MainActivity">
+    <item android:id="@+id/action_show_history"
+          android:title="@string/action_show_history"
+          android:checkable="true"
+          app:showAsAction="never"/>
+    <item android:id="@+id/action_make_all_even"
+        android:title="@string/action_make_all_even"
+        app:showAsAction="never"/>
+    <item android:id="@+id/action_delete_all"
+        android:title="@string/action_delete_all_debts"
+        app:showAsAction="never"/>
+</menu>

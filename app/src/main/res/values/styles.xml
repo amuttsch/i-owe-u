@@ -1,0 +1,28 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Main theme colors -->
+        <!--   your app branding color for the app bar -->
+        <item name="colorPrimary">@color/orange</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/orange_dark</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/orange</item>
+        <!--   theme UI controls for fab -->
+        <item name="floatingActionButtonStyle">@style/AppTheme.Fab</item>
+        <!--   overlay the action mode in the toolbar -->
+        <item name="windowActionModeOverlay">true</item>
+        <!--- changes the action mode style; height, text size, background etc -->
+        <item name="actionModeStyle">@style/AppTheme.OrangeActionMode</item>
+    </style>
+
+    <style name="AppTheme.Fab" parent="FloatingActionButton">
+        <item name="floatingActionButtonColor">@color/orange</item>
+    </style>
+
+    <style name="AppTheme.OrangeActionMode" parent="Widget.AppCompat.ActionMode">
+        <item name="background">@color/grey_cab</item>
+        <item name="backgroundSplit">@color/grey_cab_status</item>
+    </style>
+
+</resources>

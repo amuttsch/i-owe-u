@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="de.amuttsch.ioweu.app.ui.DebtEditorActivity"
+             android:orientation="vertical">
+
+    <include layout="@layout/view_action_bar" />
+
+    <fragment class="de.amuttsch.ioweu.app.ui.fragments.DebtEditorFragment"
+            android:id="@+id/fragment_debt_editor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_debt_editor"/>
+</LinearLayout>

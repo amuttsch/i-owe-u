@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="orange" type="color">#ff9800</item>
+    <item name="orange_dark" type="color">#f57c00</item>
+    <item name="green_debt" type="color">#4caf50</item>
+    <item name="grey_cab" type="color">#9b9b9b</item>
+    <item name="grey_cab_status" type="color">#7c7c7c</item>
+    <item name="grey_highlight" type="color">#ececec</item>
+</resources>
