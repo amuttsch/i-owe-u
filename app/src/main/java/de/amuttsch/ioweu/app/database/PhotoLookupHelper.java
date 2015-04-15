@@ -22,7 +22,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.provider.ContactsContract;
 
-public class PhotoLoopupHelper {
+public class PhotoLookupHelper {
 
     public static String lookupPhotoThumbnail(Context context, String lookupKey) {
         String photoUri = "";

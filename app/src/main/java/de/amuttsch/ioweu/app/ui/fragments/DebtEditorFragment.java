@@ -73,7 +73,7 @@ import java.io.File;
 import java.util.GregorianCalendar;
 
 import de.amuttsch.ioweu.app.R;
-import de.amuttsch.ioweu.app.database.PhotoLoopupHelper;
+import de.amuttsch.ioweu.app.database.PhotoLookupHelper;
 import de.amuttsch.ioweu.app.database.SqliteHelper;
 import de.amuttsch.ioweu.app.database.tables.BorrowerTable;
 import de.amuttsch.ioweu.app.database.tables.DebtTable;
@@ -633,7 +633,7 @@ public class DebtEditorFragment extends Fragment {
         if (borrower.moveToFirst()) {
             String name = borrower.getString(borrower.getColumnIndex(BorrowerTable.COLUMN_NAME));
             String lookupKey = borrower.getString(borrower.getColumnIndex(BorrowerTable.COLUMN_LOOKUP_KEY));
-            String photoUri = PhotoLoopupHelper.lookupPhotoThumbnail(getActivity(), lookupKey);
+            String photoUri = PhotoLookupHelper.lookupPhotoThumbnail(getActivity(), lookupKey);
             mBorrower.setAdapter(null);
             mBorrower.setText(name);
 

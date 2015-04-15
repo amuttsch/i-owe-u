@@ -31,9 +31,9 @@ import android.widget.TextView;
 
 import java.text.DecimalFormat;
 
+import de.amuttsch.ioweu.app.database.PhotoLookupHelper;
 import de.hdodenhof.circleimageview.CircleImageView;
 import de.amuttsch.ioweu.app.R;
-import de.amuttsch.ioweu.app.database.PhotoLoopupHelper;
 import de.amuttsch.ioweu.app.database.tables.BorrowerTable;
 import de.amuttsch.ioweu.app.database.tables.DebtTable;
 import de.amuttsch.ioweu.app.utils.CurrencyHelper;
@@ -126,7 +126,7 @@ public class BorrowerAdapter extends CursorRecyclerViewAdapter<BorrowerAdapter.V
 
         // Get contact image if possible
         if (!lookupKey.isEmpty()) {
-            String photoUri = PhotoLoopupHelper.lookupPhotoThumbnail(mContext, lookupKey);
+            String photoUri = PhotoLookupHelper.lookupPhotoThumbnail(mContext, lookupKey);
             if (!photoUri.isEmpty()) {
                 viewHolder.ImageBorrower.setImageURI(Uri.parse(photoUri));
             }
