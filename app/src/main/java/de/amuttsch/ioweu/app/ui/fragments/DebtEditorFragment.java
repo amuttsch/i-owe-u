@@ -662,6 +662,7 @@ public class DebtEditorFragment extends Fragment {
     }
 
     public void doMakeEven() {
+        setRepaid(mSelectedAmount);
         if (isValid()) {
             saveDebt(true);
             mListener.onSaveComplete();
